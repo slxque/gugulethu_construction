@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our project portfolio. View our interactive project slideshow and full-screen gallery.">
+    <title>Our Services & Project Portfolio | Guguletu Contracting Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html"><strong>Guguletu Contracting Services</strong></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="services-hero">
+        <div class="section-container" style="padding: 0;">
+            <h1 style="color: var(--primary-color); font-size: 2.5rem; margin-bottom: 15px;">Our Services & Work Standards</h1>
+            <p style="color: var(--text-light); max-width: 700px; margin: 0 auto; font-size: 1.1rem;">Discover the depth of our craftsmanship, the structural standards we maintain, and the seamless process we bring to every home improvement project.</p>
+        </div>
+    </section>
+
+    <section class="detailed-services-section">
+        <div class="section-container">
+            <h2 class="section-title">What We Offer</h2>
+
+            <div class="services-detail-list">
+                <div class="service-detail-item">
+                    <h3>Roofing & Custom Ceiling Installations</h3>
+                    <p>A secure roof is essential to guard your family against Cape Town's intense seasonal weather. We don't just patch up leaks; we provide complete diagnostic checks, timber support frame adjustments, and full roof sheet replacements.</p>
+                    <h4>Specialties include:</h4>
+                    <ul>
+                        <li>Rhino Board ceiling installations and skimming for a perfectly flat finish</li>
+                        <li>Decorative cornice fitting and seamless jointing</li>
+                        <li>Full roof waterproofing, ridge capping, and damp prevention</li>
+                    </ul>
+                </div>
+
+                <div class="service-detail-item">
+                    <h3>Premium Interior & Exterior Painting</h3>
+                    <p>A professional paint job requires expert preparation before a brush ever touches the wall. We meticulously scrape off peeling old coats, fill structural deep wall cracks, and sand surfaces to a completely flat state to guarantee maximum coat adherence.</p>
+                    <h4>Specialties include:</h4>
+                    <ul>
+                        <li>Weatherproof exterior facade painting built to withstand sun and rain</li>
+                        <li>Clean interior accent walls, door frames, and high-durability kitchen finishes</li>
+                        <li>Precision masking, zero drips, and total protection of your household furniture</li>
+                    </ul>
+                </div>
+
+                <div class="service-detail-item">
+                    <h3>Structural Cement & Masonry Work</h3>
+                    <p>Foundations shape the long-term reliability of any expansion or upgrade. We combine accurate aggregate mixing with leveling techniques to deliver crack-free surfaces ready for heavy foot traffic or structural brickwork expansion.</p>
+                    <h4>Specialties include:</h4>
+                    <ul>
+                        <li>High-strength concrete floor screeding for a flat, glass-smooth base</li>
+                        <li>Plastering and leveling raw interior or exterior brick boundary walls</li>
+                        <li>Driveways, secure foundations, structural wall patches, and general masonry</li>
+                    </ul>
+                </div>
+
+                <div class="service-detail-item">
+                    <h3>Property & Lawn Maintenance</h3>
+                    <p>We keep your outdoor space looking pristine and well-managed year-round.</p>
+                    <h4>Specialties include:</h4>
+                    <ul>
+                        <li>Professional lawn mowing and edging</li>
+                        <li>Garden clearing and debris removal</li>
+                        <li>General yard upkeep and maintenance</li>
+                    </ul>
+                </div>
+
+                <div class="service-detail-item">
+                    <h3>Custom Tiling & Bathroom Renovations</h3>
+                    <p>Turn your bathroom into a luxury space. We specialize in precision large-format wall and floor tiling, structural plumbing alignments, and modern fixture mountings with complete damp-proofing seals.</p>
+                    <h4>Specialties include:</h4>
+                    <ul>
+                        <li>Flawless ceramic and porcelain wall-to-floor tile layouts</li>
+                        <li>Modern shower panel, mixer, and dual-head system installations</li>
+                        <li>Water-sealed environments to ensure zero moisture seepage or damp buildup</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section" style="border-top: 1px solid #e2e8f0; padding-top: 60px;">
+        <div class="section-container" style="max-width: 900px; text-align: center;">
+            <h2 class="section-title">Our Project Portfolio</h2>
+            <p class="section-subtitle">Click on the slideshow below to open our full-screen interactive gallery and explore our work in detail.</p>
+
+            <div class="slideshow-container" id="openGalleryTrigger">
+
+                <div id="dynamicSlideshowContainer" style="width:100%; height:100%;"></div>
+
+                <button class="slide-prev" id="prevSlideBtn" style="z-index: 15;">&#10094;</button>
+                <button class="slide-next" id="nextSlideBtn" style="z-index: 15;">&#10095;</button>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <button class="btn btn-primary" id="viewFullGalleryBtn">🔍 Launch Full Screen Gallery</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="process-section">
+        <div class="section-container">
+            <h2 class="section-title">How We Work With You</h2>
+            <p class="section-subtitle">We follow a transparent, highly efficient pipeline to ensure your complete peace of mind.</p>
+
+            <div class="process-grid">
+                <div class="process-card"><div class="step-number">01</div><h3>Free Consultation</h3><p>Reach out via WhatsApp or call to discuss your property needs, sizes, and vision.</p></div>
+                <div class="process-card"><div class="step-number">02</div><h3>Detailed Estimate</h3><p>We provide a transparent quote detailing materials and timelines with zero hidden costs.</p></div>
+                <div class="process-card"><div class="step-number">03</div><h3>Professional Execution</h3><p>Our team arrives on schedule, working cleanly and safely using high-grade tools.</p></div>
+                <div class="process-card"><div class="step-number">04</div><h3>Final Inspection</h3><p>We walk through the finished project with you to ensure you are 100% satisfied.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="portfolioLightboxModal" class="lightbox-modal">
+        <span class="lightbox-close-btn" id="closeLightboxBtn">&times;</span>
+
+        <div class="lightbox-modal-content">
+            <div class="lightbox-main-stage">
+                <div id="lightboxStageCaption" class="lightbox-stage-caption"></div>
+
+                <button class="stage-nav-btn stage-prev" id="stagePrevBtn">&#10094;</button>
+                <button class="stage-nav-btn stage-next" id="stageNextBtn">&#10095;</button>
+            </div>
+
+            <div class="lightbox-thumbnails-tray" id="thumbnailsTray"></div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <p>&copy; 2026 Guguletu Contracting Services. All Rights Reserved.</p>
+        <p>Based in Gugulethu, South Africa | Call: +27 81 836 9245 | +27 68 084 4731</p>
+    </div>
+</footer>
+
+<a href="https://wa.me/27818369245?text=Hi,%20I'm%20interested%20in%20getting%20a%20quote%20for%20a%20contracting%20project!"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer"
+   title="Chat with us on WhatsApp">
+    <div class="whatsapp-pulse-ring"></div>
+    <div class="whatsapp-pulse-ring delay-ring"></div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28" fill="#ffffff" aria-hidden="true" style="position: relative; z-index: 5;">
+        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+    </svg>
+</a>
+
+
+<script src="portfolio.js"></script>
+
+</body>
+</html>
